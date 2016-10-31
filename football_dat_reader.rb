@@ -2,6 +2,14 @@
 def read_file(file, col_a, col_b, col_c, 
   ignore_line, filter_char,
   key_1, key_2, key_3)
+  # Read File method will take a full directory path
+  # to the file and filter line by line based on the following
+  # configuration:
+  # col_a => column position based on dat file you want to include
+  # col_b => column position based on dat file you want to include
+  # col_c => column position based on dat file you want to include
+  # ignore_line => line position you want to ignore before filtering through file
+  # filter_char => filter character out from the data we're mining
   arr = []
   line_counter = 0
   File.open(file).each do |line|
